@@ -15,10 +15,8 @@ Users should be able to:
 ### Screenshots ****
 
 
-### Links 
+see the project [Live](https://mortgage-repayment-calculator-project.netlify.app/)
 
-- live Site URL: ****
-- Slution URL: ****
 
 ## My process
 
