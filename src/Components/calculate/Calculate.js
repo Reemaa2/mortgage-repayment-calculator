@@ -23,7 +23,6 @@ const Calculate = (props) => {
 
 
   const handleChange = (event) => {
-    console.log('run handle change func')
     const {name, value} = event.target;
 
     setFormData(prevFormData => ({...prevFormData, [name]: value}));
