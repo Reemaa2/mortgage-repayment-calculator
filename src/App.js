@@ -1,7 +1,8 @@
 import './App.css';
+import './index.css';
 import React from 'react';
-import Calculate from './Components/calculate/Calculate';
-import Result from './Components/result/Result';
+import Calculate from './Components/Calculate';
+import Result from './Components/Result';
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
 
 
   return (
-    <main>
+    <main className='flex flex-col lg:flex-row lg:m-[2em] xl:mx-[4em] 2xl:mx-[10em]'>
       <Calculate 
         setShowResult={setShowResult} 
         setCalculation={setCalculation} 

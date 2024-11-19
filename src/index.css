@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  @apply bg-slate-100 font-Jakarta;
+}
+
+
+@layer components {
+
+  .reset-btn {
+    @apply border-none bg-transparent underline text-[.99rem] text-slate-700 mb-[2em] cursor-pointer font-Jakarta hover:text-slate-900 md:mb-0
+  }
+
+  .input-name {
+    @apply text-slate-700 text-[1rem] mb-[.5em] font-medium;
+  }
+
+  .calculate-btn {
+    @apply w-full py-[0.8em] px-[2.4em] flex items-center justify-center text-slate-900 text-[1em] font-bold text-center border-none rounded-[30px] bg-lime cursor-pointer mt-[1.8em] hover:bg-lime-light md:w-1/2 md:whitespace-nowrap lg:w-auto
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .input-box {
+    @apply relative border rounded-[5px] overflow-hidden cursor-pointer mb-[0.7em];
+  }
+
+
+  
+  
+}
+
+

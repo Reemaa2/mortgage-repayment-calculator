@@ -1,5 +1,4 @@
 import React from 'react';
-import '../calculate/calculate.css';
 import clsx from 'clsx';
 
 const RadioInput = (props) => {
@@ -8,9 +7,10 @@ const RadioInput = (props) => {
 
   function handleClick() {
     const div = divRef.current;
-    const isChecked = div.classList.contains('checked-div');
+    const isChecked = div.classList.contains('border-lime');
 
-    div.classList.toggle('checked-div');
+    div.classList.toggle('border-lime');
+    div.classList.toggle('bg-lime-lightest');
 
     props.setFormData(prevForm => (
       {...prevForm, mortgageType: isChecked ? '' : props.radioName}
@@ -20,23 +20,28 @@ const RadioInput = (props) => {
   }
 
 
+
   
   return (
-    <div className={clsx('input-div', 'input-div-radio', {
-      'checked-div': props.formData.mortgageType === props.radioName,
-    })}
-      ref={divRef} onClick={handleClick}> 
-
-      <input 
+    <div className={clsx('input-box', 'h-[45px] flex items-center cursor-pointer mt-[.5em]  hover:border-lime', {
+      'bg-lime-lightest border-lime': props.formData.mortgageType === props.radioName,
+      'border-slate-500': props.formData.mortgageType !== props.radioName,
+      })} ref={divRef} onClick={handleClick}
+    > 
+      <div className='relative flex items-center'>
+        <input 
         type='radio' 
-        className='input-type-radio' 
+        className='appearance-none bg-white w-[1.2em] h-[1.2em] border border-[#4e4e4e] rounded-[50%] mx-[1.2em] cursor-pointer checked:border-lime' 
         name='mortgageType'
         value={props.radioName}
         checked={props.formData['mortgageType'] === props.radioName}
         onChange={props.onChangeFunction}
-      ></input>
-      <label>{props.radioName}</label>
-
+      >
+      </input>
+      {props.formData.mortgageType === props.radioName && 
+      <span className='bg-lime w-[.7em] h-[.7em] rounded-[50%] absolute left-[1.45em]'></span> }
+      <label className='text-slate-900 text-[1em] font-bold'>{props.radioName}</label>
+      </div>
     </div>
   )
 }
