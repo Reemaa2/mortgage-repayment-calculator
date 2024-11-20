@@ -23,25 +23,17 @@ Users should be able to:
 
 see the project [Live](https://mortgage-repayment-calculator-project.netlify.app/)
 
+<br>
 
-## My process
-
-### Built with
+## Built with
 
 - React
+- Tailwind CSS
 - mobile-first workflow
-
-
-
-### What i Learned
-
-- Custom style radio input elements.
-
-<br>
 
 ## Future Improvements
 
-- [ ] Use Tailwind CSS for styling.
+- [x] Use Tailwind CSS for styling.
 - [ ] Migrate to TypeScript for type safety.
 
  
