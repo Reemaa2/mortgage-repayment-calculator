@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
       },
       colors: {
         'lime': 'hsl(61, 70%, 52%)',
         'lime-light': 'hsl(61, 66%, 71%)',
-        'lime-lightest': 'hsl(60, 100%, 89%)',
+        'lime-lightest': 'hsl(60, 87%, 94%)',
         'red': 'hsl(4, 69%, 50%)',
         'white': 'hsl(0, 0%, 100%)',
         'slate-100': 'hsl(202, 86%, 94%)',

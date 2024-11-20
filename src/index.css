@@ -5,14 +5,15 @@
 
 
 body {
-  @apply bg-slate-100 font-Jakarta;
+  @apply bg-slate-100 font-jakarta;
 }
 
 
 @layer components {
 
   .reset-btn {
-    @apply border-none bg-transparent underline text-[.99rem] text-slate-700 mb-[2em] cursor-pointer font-Jakarta hover:text-slate-900 md:mb-0
+    @apply border-none bg-transparent underline text-[.99rem] text-slate-700;
+    @apply mb-[2em] cursor-pointer font-jakarta hover:text-slate-900 md:mb-0;
   }
 
   .input-name {
@@ -20,7 +21,10 @@ body {
   }
 
   .calculate-btn {
-    @apply w-full py-[0.8em] px-[2.4em] flex items-center justify-center text-slate-900 text-[1em] font-bold text-center border-none rounded-[30px] bg-lime cursor-pointer mt-[1.8em] hover:bg-lime-light md:w-1/2 md:whitespace-nowrap lg:w-auto
+    @apply w-full py-[0.8em] px-[2.4em] flex items-center justify-center;
+    @apply text-slate-900 text-[1em] font-bold text-center border-none;
+    @apply rounded-[30px] bg-lime cursor-pointer mt-[1.8em];
+    @apply hover:bg-lime-light md:w-1/2 md:whitespace-nowrap lg:w-auto
   }
 
   input[type="number"]::-webkit-outer-spin-button,
@@ -31,11 +35,7 @@ body {
 
   .input-box {
     @apply relative border rounded-[5px] overflow-hidden cursor-pointer mb-[0.7em];
-  }
-
-
-  
-  
+  } 
 }
 
 

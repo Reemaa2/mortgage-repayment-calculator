@@ -1,7 +1,7 @@
 import React from 'react';
 import calculatorImage from '../assets/images/icon-calculator.svg';
-import NumberInput from './sub-components/NumberInput';
-import RadioInput from './sub-components/RadioInput';
+import NumberInput from './input-components/NumberInput';
+import RadioInput from './input-components/RadioInput';
 
 
 
@@ -96,28 +96,23 @@ const Calculate = (props) => {
             <NumberInput 
               inputName='Mortgage Amount' 
               inputInfo='$'  
-              id='amount'
               name='mortgageAmount'
               onChangeFunction={handleChange}
               emptyValues={emptyValues}
               formData={formData}
               isFirst={true}
             />
-
             <NumberInput
               inputName='Mortgage Term' 
               inputInfo='years'  
-              id='term' 
               name='mortgageTerm'
               onChangeFunction={handleChange}
               emptyValues={emptyValues}
               formData={formData}
             />
-
             <NumberInput  
               inputName='Intrest Rate' 
               inputInfo='%' 
-              id='rate' 
               name='intrestRate'
               onChangeFunction={handleChange}
               emptyValues={emptyValues}
@@ -125,9 +120,8 @@ const Calculate = (props) => {
             />
           </div>
           
-
           <div>
-            <span className="input-name">Mortgage Type</span>
+            <label className="input-name">Mortgage Type</label>
             
             <div>
               <RadioInput 
